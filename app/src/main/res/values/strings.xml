@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Trabalho02-2018-1</string>
+    <string name="op_eleitor">eleitor</string>
+    <string name="op_candidato">Candidato</string>
+    <string name="lbl_msg">Selecione uma opção</string>
+    <string name="btn_opcao">ir</string>
 </resources>
