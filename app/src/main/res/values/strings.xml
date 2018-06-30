@@ -5,4 +5,5 @@
     <string name="lbl_msg">Selecione uma opção:</string>
     <string name="btn_opcao">ir</string>
     <string name="title_activity_listagem_eleitor">ListagemEleitorActivity</string>
+    <string name="title_activity_listagem_candidato">ListagemCandidatoActivity</string>
 </resources>

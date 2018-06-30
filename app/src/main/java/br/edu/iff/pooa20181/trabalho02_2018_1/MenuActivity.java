@@ -34,6 +34,11 @@ public class MenuActivity extends AppCompatActivity {
                     Intent intent = new Intent(MenuActivity.this,ListagemEleitorActivity.class);
                     startActivity(intent);
                 }
+                else
+                {
+                    Intent intent = new Intent(MenuActivity.this,ListagemCandidatoActivity.class);
+                    startActivity(intent);
+                }
             }
         });
     }
