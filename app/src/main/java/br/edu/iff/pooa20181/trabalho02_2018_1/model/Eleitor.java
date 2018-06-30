@@ -28,7 +28,17 @@ public class Eleitor extends RealmObject implements Serializable
     private String secao;
     private String municipio;
 
-    public Eleitor(String nome, String nome_da_mae, Date dt_nascimento, String zona, String num_titulo, String secao, String municipio) {
+    public Eleitor(int id, String nome, String num_titulo, String zona, String secao)
+    {
+        this.id = id;
+        this.nome = nome;
+        this.num_titulo = num_titulo;
+        this.zona = zona;
+        this.secao = secao;
+    }
+
+    public Eleitor(int id,String nome, String nome_da_mae, Date dt_nascimento, String zona, String num_titulo, String secao, String municipio) {
+        this.id = id;
         this.nome = nome;
         this.nome_da_mae = nome_da_mae;
         this.dt_nascimento = dt_nascimento;

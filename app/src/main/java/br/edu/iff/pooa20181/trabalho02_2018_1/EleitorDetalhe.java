@@ -49,7 +49,7 @@ public class EleitorDetalhe extends AppCompatActivity {
         btnExcluir = (Button) findViewById(R.id.btnExcluir);
 
         //id recebido da página de listagem de eleitor
-        Intent intent    = getIntent();
+        Intent intent = getIntent();
         id = (int) intent.getSerializableExtra("id");
         realm = Realm.getDefaultInstance();
 
@@ -59,6 +59,10 @@ public class EleitorDetalhe extends AppCompatActivity {
             btnSalvar.setEnabled(false);
             btnSalvar.setClickable(false);
             btnSalvar.setVisibility(View.INVISIBLE);
+
+            btnAlterar.setEnabled(true);
+            btnAlterar.setClickable(true);
+            btnAlterar.setVisibility(View.VISIBLE);
 
             //pega o primeiro eleitor com o id passado entre as views
             eleitor = realm.where(Eleitor.class).equalTo("id",id).findFirst();

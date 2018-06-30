@@ -43,6 +43,7 @@ public class EleitorAdapter extends RecyclerView.Adapter {
 
         Eleitor eleitor  = this.eleitores.get(position) ;
 
+        //define o que vai mostrar no cardview da lista
         eleitorHolder.nomeEleitor.setText(eleitor.getNome());
         eleitorHolder.numTitulo.setText(eleitor.getNum_titulo());
         eleitorHolder.zona.setText(eleitor.getZona());
