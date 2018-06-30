@@ -6,4 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".EleitorDetalhe">
 
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNomeMae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Nome da mãe"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtDtNascimento"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Data de nascimento"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeMae" />
+
+    <EditText
+        android:id="@+id/edtNumTitulo"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Número do título"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeMae"
+        tools:layout_editor_absoluteX="180dp" />
+
+    <EditText
+        android:id="@+id/edtZona"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Zona"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDtNascimento" />
+
+    <EditText
+        android:id="@+id/edtSecao"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Seção"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumTitulo" />
+
+    <EditText
+        android:id="@+id/edtMunicipio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Município"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtZona" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="Salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMunicipio" />
+
+    <Button
+        android:id="@+id/btnAlterar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Alterar"
+        app:layout_constraintTop_toBottomOf="@+id/edtMunicipio"
+        tools:layout_editor_absoluteX="135dp" />
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Excluir"
+        app:layout_constraintTop_toBottomOf="@+id/edtMunicipio"
+        tools:layout_editor_absoluteX="262dp" />
 </android.support.constraint.ConstraintLayout>
