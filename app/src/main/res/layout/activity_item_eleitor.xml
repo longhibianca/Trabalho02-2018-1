@@ -22,20 +22,20 @@
             android:layout_marginTop="10dp"
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNumUrna" />
+            app:layout_constraintTop_toBottomOf="@+id/tvZona" />
 
         <TextView
-            android:id="@+id/tvNumUrna"
+            android:id="@+id/tvZona"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPartido" />
+            app:layout_constraintTop_toBottomOf="@+id/tvNumTitulo" />
 
         <TextView
-            android:id="@+id/tvPartido"
+            android:id="@+id/tvNumTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
