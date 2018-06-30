@@ -27,7 +27,8 @@
             android:name=".ListagemCandidatoActivity"
             android:label="@string/title_activity_listagem_candidato"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ItemCandidatoActivity"></activity>
+        <activity android:name=".ItemCandidatoActivity" />
+        <activity android:name=".CandidatoDetalhe"></activity>
     </application>
 
 </manifest>
