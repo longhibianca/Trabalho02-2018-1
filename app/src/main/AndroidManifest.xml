@@ -21,7 +21,8 @@
             android:name=".ListagemEleitorActivity"
             android:label="@string/title_activity_listagem_eleitor"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ItemEleitorActivity"></activity>
+        <activity android:name=".ItemEleitorActivity" />
+        <activity android:name=".EleitorDetalhe"></activity>
     </application>
 
 </manifest>
