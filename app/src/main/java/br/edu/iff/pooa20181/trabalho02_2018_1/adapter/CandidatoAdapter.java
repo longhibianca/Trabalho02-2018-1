@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,7 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
     private static ClickRecyclerViewListener clickRecyclerViewListener;
 
     public CandidatoAdapter(List<Candidato> candidatos, Context context,ClickRecyclerViewListener clickRecyclerViewListener) {
+        Log.i("candidato adapter", "estou no construtor");
         this.candidatos = candidatos;
         this.context = context;
         this.clickRecyclerViewListener = clickRecyclerViewListener;
@@ -29,6 +31,7 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
+        Log.i("listagem candidato", "estou no on create view holder");
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.activity_item_candidato, parent, false);
         CandidatoViewHolder candidatoViewHolder = new CandidatoViewHolder(view);
@@ -38,6 +41,7 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
+        Log.i("listagem candidato", "estou no on bind view holder");
 
         CandidatoViewHolder candidatoHolder = (CandidatoViewHolder) viewHolder;
 
@@ -53,6 +57,7 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
+        Log.i("listagem candidato", "estou no get item count");
         return candidatos.size();
     }
 
@@ -64,8 +69,10 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
         private final TextView cargo;
 
         public CandidatoViewHolder(View itemView) {
+
             super(itemView);
-            nomeCandidato = (TextView) itemView.findViewById(R.id.tvNome);
+            Log.i("listagem candidato", "estou no candidato view holder");
+            nomeCandidato = (TextView) itemView.findViewById(R.id.tvNomeCandidato);
             partido = (TextView) itemView.findViewById(R.id.tvPartido);
             num_urna = (TextView) itemView.findViewById(R.id.tvNumUrna);
             cargo = (TextView) itemView.findViewById(R.id.tvCargo);
@@ -73,6 +80,7 @@ public class CandidatoAdapter extends RecyclerView.Adapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    Log.i("listagem candidato", "estou no candidato view holder - onclick");
                     clickRecyclerViewListener.onClick(candidatos.get(getLayoutPosition()));
 
                 }
