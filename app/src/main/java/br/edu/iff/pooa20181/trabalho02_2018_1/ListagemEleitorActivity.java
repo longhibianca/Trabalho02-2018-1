@@ -34,7 +34,8 @@ public class ListagemEleitorActivity extends AppCompatActivity implements ClickR
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ListagemEleitorActivity.this,EleitorDetalhe.class);
-                //intent.putExtra("id",0);
+                //id passado para a pagina de salvar,editar e criar eleitor
+                intent.putExtra("id",0);
                 startActivity(intent);
             }
         });
@@ -61,7 +62,7 @@ public class ListagemEleitorActivity extends AppCompatActivity implements ClickR
     public void onClick(Object object) {
         Eleitor eleitor = (Eleitor) object;
         Intent intent = new Intent(ListagemEleitorActivity.this,EleitorDetalhe.class);
-        intent.putExtra("id",eleitor.getNum_titulo());
+        intent.putExtra("id",eleitor.getId());
         startActivity(intent);
     }
 

@@ -13,7 +13,16 @@ public class Eleitor extends RealmObject implements Serializable
     private Date dt_nascimento;
     private String zona;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @PrimaryKey
+    private int id;
     private String num_titulo;
 
     private String secao;
