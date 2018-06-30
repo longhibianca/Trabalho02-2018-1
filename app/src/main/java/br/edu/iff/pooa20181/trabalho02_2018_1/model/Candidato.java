@@ -10,7 +10,16 @@ public class Candidato extends RealmObject implements Serializable
     private String nome;
     private String partido;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @PrimaryKey
+    private int id;
     private String num_na_urna;
 
     private String cargo;
@@ -31,6 +40,13 @@ public class Candidato extends RealmObject implements Serializable
     public Candidato() {
     }
 
+    public Candidato(int id, String nome, String num_urna, String cargo)
+    {
+        this.id = id;
+        this.nome = nome;
+        this.num_na_urna = num_urna;
+        this.cargo = cargo;
+    }
     public String getNome() {
         return nome;
     }
