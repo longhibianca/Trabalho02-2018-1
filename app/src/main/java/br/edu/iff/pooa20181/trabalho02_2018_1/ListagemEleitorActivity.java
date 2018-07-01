@@ -46,13 +46,13 @@ public class ListagemEleitorActivity extends AppCompatActivity implements ClickR
         super.onResume();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.lista_eleitor);
 
-        recyclerView.setAdapter(new EleitorAdapter(getEventos(),this,this));
+        recyclerView.setAdapter(new EleitorAdapter(getEleitores(),this,this));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
 
-    public List<Eleitor> getEventos(){
+    public List<Eleitor> getEleitores(){
 
         return (List) realm.where(Eleitor.class).findAll();
 

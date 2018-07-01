@@ -15,44 +15,84 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tvNomeCandidato"
+            android:id="@+id/idCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Cargo:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNumNaUrna" />
+
+        <TextView
+            android:id="@+id/idPartido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Partido:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNomeCandidato" />
+
+        <TextView
+            android:id="@+id/idNomeCandidato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
-            android:text="TextView"
+            android:text="Nome:"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNomeCandidato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/idNomeCandidato"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvCargo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idCargo"
             app:layout_constraintTop_toBottomOf="@+id/tvNumUrna" />
 
         <TextView
             android:id="@+id/tvNumUrna"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idNumNaUrna"
             app:layout_constraintTop_toBottomOf="@+id/tvPartido" />
 
         <TextView
             android:id="@+id/tvPartido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idPartido"
             app:layout_constraintTop_toBottomOf="@+id/tvNomeCandidato" />
+
+        <TextView
+            android:id="@+id/idNumNaUrna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Número na Urna:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idPartido" />
 
     </android.support.constraint.ConstraintLayout>
 
